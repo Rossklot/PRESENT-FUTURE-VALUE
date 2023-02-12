@@ -1,0 +1,44 @@
+import math
+import collections
+import operator
+import random
+
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as pp
+
+#matplotlib inline
+
+def accumulate(iterable, func=operator.add, *, initial=None):
+    'Return running'
+    it = iter(iterable)
+    total = initial
+    if initial is None:
+        try:
+            total = next(it)
+        except stopIteration:
+                return
+        yield total
+        for element in it:
+                total = func(total, element)
+                yield total
+
+# Future Value ( Or Maturity Value) 
+
+# j = Nominal interest rate
+# m = number of compounding per year
+# i = Period interest rate
+
+# Our intuition usually works better if we put numbers to the variable.
+# Suppose a $1000 investment earn 8% compounded semiannually for three years.
+# From this given information, we can "attach" numbers to variables as follows
+
+# PV=$1000, J= 8% compounded Semiannually, Term= 3 years, m= 2 compouding per year
+# i=j/m 8%/2= 4% per half year, n= m(Term).
+
+'PV = $1000, i=4%=0.04, and n=6'
+'FV = PV(1+i)n'
+
+present_value = [1000, 0] 
+list(accumulate(present_value, lambda bal, pmnt: 1000 * 1.2653190))
