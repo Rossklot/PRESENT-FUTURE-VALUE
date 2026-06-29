@@ -4,6 +4,7 @@ import plotly.express as px
 
 # --- Page Configuration ---
 st.set_page_config(page_title="FIRE & Coast FIRE Tracker", page_icon="🔥", layout="wide")
+fig.update_layout(yaxis=dict(tickformat="$,"))
 
 st.title("🔥 Advanced Financial Independence (FIRE) Dashboard")
 st.markdown("Model your timeline to complete financial freedom or find your **Coast FIRE** milestone.")
@@ -14,9 +15,9 @@ current_age = st.sidebar.number_input("Current Age", value=30, step=1)
 target_retirement_age = st.sidebar.number_input("Traditional Retirement Age (For Coast calculation)", value=65, step=1)
 
 st.sidebar.header("💰 Financial Metrics")
-current_net_worth = st.sidebar.number_input("Current Net Worth ($)", value=25000, step=5000)
-annual_income = st.sidebar.number_input("Annual Income (After Tax) ($)", value=90000, step=5000)
-annual_expenses = st.sidebar.number_input("Annual Expenses ($)", value=45000, step=2000)
+current_net_worth = st.sidebar.number_input("Current Net Worth ($)", value=1000000000.0, step=5000)
+annual_income = st.sidebar.number_input("Annual Income (After Tax) ($)", value=1000000000.0, step=5000)
+annual_expenses = st.sidebar.number_input("Annual Expenses ($)", value=1000000000.0, step=2000)
 
 st.sidebar.header("📈 Market Assumptions")
 expected_return_rate = st.sidebar.slider("Expected Annual Return (Inflation Adjusted %)", 1.0, 12.0, 7.0, 0.5) / 100
