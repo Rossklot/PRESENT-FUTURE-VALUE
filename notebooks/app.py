@@ -105,9 +105,9 @@ else:
     # --- Explanatory Callout for Coast FIRE ---
 if enable_coast and current_net_worth < coast_fire_target:
         st.markdown(f"""
-**What this means:** Once you reach **${coast_fire_target:,.0f}**, you can completely stop saving for retirement. 
-If you choose to touch nothing and let it grow at an expected annual return of **{expected_return}%**, 
-your nest egg will compound to **${fire_target:,.0f}** by the time you turn **{retirement_age}**.
+**What this means:** Once you reach your Coast FIRE target, you can completely stop saving for retirement. 
+If you choose to touch nothing and let your current net worth grow at your expected market return rate, 
+your nest egg will compound to your full FIRE target by the time you reach your traditional retirement age.
 """)
 elif enable_coast and current_net_worth >= coast_fire_target:
         st.balloons()
