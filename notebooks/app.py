@@ -104,7 +104,11 @@ else:
 
     # --- Explanatory Callout for Coast FIRE ---
 if enable_coast and current_net_worth < coast_fire_target:
-        st.write(f"**What this means:** Once you reach **${coast_fire_target:,.0f}**, you can stop saving entirely. If you just touch nothing and let it grow at **{expected_return_rate * 100:.1f}%**, compound interest will carry it to **${fire_target:,.0f}** by the time you turn **{coast_hit_age:.0f}**.")
+        st.markdown(f"""
+**What this means:** Once you reach **${coast_fire_target:,.0f}**, you can completely stop saving for retirement. 
+If you choose to touch nothing and let it grow at an expected annual return of **{expected_return}%**, 
+your nest egg will compound to **${fire_target:,.0f}** by the time you turn **{retirement_age}**.
+""")
 elif enable_coast and current_net_worth >= coast_fire_target:
         st.balloons()
         st.success(f"🌟 **You have already coasted!** Your current net worth is compounding fast enough to hit your target by age {target_retirement_age} without you saving another dollar.")
