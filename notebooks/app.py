@@ -4,7 +4,7 @@ import plotly.express as px
 
 # --- Page Configuration ---
 st.set_page_config(page_title="FIRE & Coast FIRE Tracker", page_icon="🔥", layout="wide")
-fig.update_layout(yaxis=dict(tickformat="$,"))
+
 
 st.title("🔥 Advanced Financial Independence (FIRE) Dashboard")
 st.markdown("Model your timeline to complete financial freedom or find your **Coast FIRE** milestone.")
@@ -125,6 +125,7 @@ if enable_coast:
         color_map["Coast FIRE Target"] = "#2ca02c"
 
 fig = px.line(
+        fig.update_layout...
         df_timeline, 
         x="Age", 
         y=y_lines,
