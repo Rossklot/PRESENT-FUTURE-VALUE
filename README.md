@@ -1,7 +1,18 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# 🔥 FIRE & Coast FIRE Tracker
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+A clean, responsive, and 100% private financial planning dashboard built with Python. This application allows users to model their timeline to Financial Independence (FIRE) and Coast FIRE based on custom market assumptions.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+## 🚀 Live Demo
+Try out the live web application here: https://woknnxqbs3t3nlsxtztcj4.streamlit.app/
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## ✨ Features
+* **Coast FIRE Calculations:** Automatically computes your target nest egg based on your retirement horizon.
+* **Dynamic Projections:** Interactive data visualization powered by Plotly.
+* **Privacy-First Architecture:** 100% client-side calculation. No financial data is ever collected, stored, or transmitted.
+* **Scalable Infrastructure:** Built to handle everything from standard portfolios up to high-net-worth engineering models gracefully.
+
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Framework:** Streamlit
+* **Visualization:** Plotly Express
+* **Data Management:** Pandas
